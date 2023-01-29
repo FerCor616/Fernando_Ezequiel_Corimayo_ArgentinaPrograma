@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Anton&family=Roboto&display=swap');
+
+*{
+  box-sizing: border-box;
+  
+}
+.fondo{
+   
+  background-color: #eee4da; 
+}
+.principal{
+    background-color:#fabc6b;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+.formulario{
+    background-color: #f8d7b2;
+}
+.info{
+    background-color: #fce5c4;
+    padding-top: 3%;
+}
+#inf,#exp,#hab{
+    background-color: #e9b424;
+}
+.portada {
+    font-family: 'Anton';
+    font-size:500%;
+    padding-top: 20px;
+}
+.nom-formulario{
+    font-family: 'Roboto', sans-serif;
+}
+label{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+input{
+    font-family: 'Alegreya Sans', sans-serif;
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+    color:black;
+    line-height: 250%;
+}
+.indice{
+    background-color: bisque;
+}
+.infoAcademica{
+    font-size: 150%;
+}

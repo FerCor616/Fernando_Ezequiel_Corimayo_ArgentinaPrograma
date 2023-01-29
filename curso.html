@@ -15,82 +15,155 @@
 
     <title>Curso Argentina Programa</title>
 
+    
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
 <body class="fondo">
     <header>
-        <h1>TuCV.NET</h1>
-    <nav>
-        <ol>
-            <li><a href="#inf">Informacion personal</a></li>
-            <li><a href="#exp">Experiecias</a></li>
-            <li><a href="#hab">Habilidades</a></li>
-        </ol>
-    </nav>
+        <div class="container-fluid text-center">
+        <h1 class="portada container-fluid">TuCV.NET</h1>
+        </div>
+    <div class="row">
+        
+            <nav class="col-4">
+                <div class="indice container ms-4 mt-5 p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+                <ol>
+                    <li><a href="#inf">Informacion personal</a></li>
+                    <li><a href="#exp">Experiecias</a></li>
+                    <li><a href="#hab">Habilidades</a></li>
+                </ol>
+            </div>
+            </nav>
+        
+        <div class="col-8 p-5">
+            <img class="img-fluid" src="https://s3.us-east-1.amazonaws.com/contents.newzenler.com/1134/library/emote-esume5fd325f90a1cc_lg.png" alt="">
+        </div>
+    </div>
     </header>
     
-    <main>
-    <form action="">
-    <section>
-    <div class="titulo">
-    <h3 >CURRICULUM VITAE</h3>
-    </div>
-    <h4 id="inf">INFORMACION PERSONAL</h4>
-        <label for="nombre" class="form-label">Nombre: </label>
-        <input id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre" />
-        <label for="apellido">Apellido: </label>
-        <input type="text" name="apellido" placeholder="Ingrese su apellido" />
-        <label for="pais">Telefono: </label>
-        <input type="number" name="telefono" placeholder="Ingrese su numero de celular" />
-        <label for="edad">Edad: </label>
-        <input type="number" name="edad" placeholder="Ingrese su edad" />
-        <label for="correo">Correo: </label>
-        <input type="email" name="correo" placeholder="Ingrese su email" />
-        <label for="">FOTO DE PERFIL</label>
-
-        <label for="">_Nivel terciario terminado?: </label>
-        <input type="checkbox" name="si"/>Si
-        <input type="checkbox" name="si"/>Estoy cursando
-
-        <label for="">_Nivel univeritario terminado?: </label>
-        <input type="checkbox" name="si"/>Si
-        <input type="checkbox" name="si"/>Estoy cursando
-
+    <main class="container text-center mt-5">
+    <div class="principal rounded-top">
+    <h3 class="nom-formulario ">CURRICULUM VITAE</h3>
+    <div class="formulario container-fluid rounded-top">
+    <form  action="">
+    <section class="pri">
+    <div class="info">
+    <h5 id="inf" class="nom-formulario">INFORMACION PERSONAL</h5>
+        <div class="row">
+            <div class="col-7">
+                <label for="nombre" class="col-form-label">Nombre: </label>
+                <input class="form-control" id="nombre" type="text" name="nombre" placeholder="Ingrese su nombre" />
+                <label for="apellido" class="col-form-label">Apellido: </label>
+                <input class="form-control" type="text" name="apellido" placeholder="Ingrese su apellido" />
+                <label for="telefono" class="col-form-label">Telefono: </label>
+                <input class="form-control" type="number" name="telefono" placeholder="Ingrese su numero de celular" />
+                <div class="row">
+                    <div class="col-8">
+                        <label for="correo" class="col-form-label">Correo: </label>
+                <input class="form-control" type="email" name="correo" placeholder="Ingrese su email" />
+                    </div>
+                    <div class="col-4">
+                        <label for="edad" class="col-form-label">Edad: </label>
+                <input class="form-control" type="number" name="edad" placeholder="Ingrese su edad" />
+                    </div>
+                </div>
+                
+                
+            </div>
+            <div class="col-5 p-5">
+                <label for="">FOTO DE PERFIL</label>
+                
+                <img class="img-fluid" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png" alt="imagen del perfil">
+                <div class="container mt-1 ">
+                    <button class="btn btn-outline-secondary">Cambiar imagen </button>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <label class="infoAcademica" for="">_Nivel terciario terminado?: </label>
+                    </div>
+                    <div class="col-5">
+                        <input type="radio" name="terciario"/>No
+                        <input type="radio" name="terciario"/>Si
+                        <input type="radio" name="terciario"/>Estoy cursando
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-7">
+                        <label class="infoAcademica" for="">_Nivel univeritario terminado?: </label>
+                    </div>
+                    <div class="col-5">
+                        <input type="radio" name="terciario"/>No
+                        <input type="radio" name="univeritario"/>Si
+                        <input type="radio" name="univeritario"/>Estoy cursando
+                    </div>
+                </div>
+        </div>
+        </div>
+        
     </section>
 
 
     <section>
-    <h4 id="exp">EXPERIENCIAS OBTENIDAS</h4>
-    <textarea name="" id="" cols="100" rows="5"></textarea>
+    <h5 id="exp" class="nom-formulario">EXPERIENCIAS OBTENIDAS</h5>
+    <textarea class="container-fluid form-control" name="" id="" cols="100" rows="5"></textarea>
     </section>
 
 
     <section>
-    <h4 id="hab">HABILIDADES OBTENIDAS</h4>
-    <label for="">Nivel de habla ingles expetuando la escritura: </label>
-    <input type="radio" name="no"/>No
-    <input type="radio" name="poco"/>Poco
-    <input type="radio" name="medio"/>Medio
-    <input type="radio" name="mucho"/>Mucho
-    <label for="">Nivel de informatica, manejo de paquete oficce: </label>
-    <input type="radio" name="no"/>No
-    <input type="radio" name="poco"/>Poco
-    <input type="radio" name="medio"/>Medio
-    <input type="radio" name="mucho"/>Mucho
-    <label for="">Nivel de habilidades sociales, comunicación: </label>
-    <input type="radio" name="poco"/>Poco
-    <input type="radio" name="medio"/>Medio
-    <input type="radio" name="mucho"/>Mucho
-    <label for="">Nivel de liderasgo y comunicacion en equipo : </label>
-    <input type="radio" name="poco"/>Poco
-    <input type="radio" name="medio"/>Medio
-    <input type="radio" name="mucho"/>Mucho
+    <h5 id="hab" class="nom-formulario">HABILIDADES OBTENIDAS</h5>
+    <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-5 pt-0">Nivel de habla ingles expetuando la escritura: </legend>
+        <div class="col-sm-5">
+            <input class="form-check-input" type="radio" name="op1"/>No
+            <input class="form-check-input" type="radio" name="op1"/>Poco
+            <input class="form-check-input" type="radio" name="op1"/>Medio
+            <input class="form-check-input" type="radio" name="op1"/>Mucho
+        </div>
+    </fieldset>
+    <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-5 pt-0">Nivel de habilidades sociales, comunicación: </legend>
+        <div class="col-sm-5">
+            <input class="form-check-input" type="radio" name="op2"/>No
+            <input class="form-check-input" type="radio" name="op2"/>Poco
+            <input class="form-check-input" type="radio" name="op2"/>Medio
+            <input class="form-check-input" type="radio" name="op2"/>Mucho
+        </div>
+    </fieldset>
+    <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-5 pt-0">Nivel de informatica, manejo de paquete oficce:  </legend>
+        <div class="col-sm-5">
+            <input class="form-check-input" type="radio" name="op3"/>No
+            <input class="form-check-input" type="radio" name="op3"/>Poco
+            <input class="form-check-input" type="radio" name="op3"/>Medio
+            <input class="form-check-input" type="radio" name="op3"/>Mucho
+        </div>
+    </fieldset>
+    <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-5 pt-0">Nivel de liderasgo y comunicacion en equipo : </legend>
+        <div class="col-sm-5">
+            <input class="form-check-input" type="radio" name="op4"/>No
+            <input class="form-check-input" type="radio" name="op4"/>Poco
+            <input class="form-check-input" type="radio" name="op4"/>Medio
+            <input class="form-check-input" type="radio" name="op4"/>Mucho
+        </div>
+    </fieldset>
     </section>
     <button class="btn btn-outline-secondary">Enviar</button>
+    </div>
     </form>
+    </div>
+    </div>
     </main>
     <footer>
-        <p>gracias por usar tu cv.net online</p>
+        <p class="container-fluid text-center">Muchas gracias por usar tu cv.net online</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
