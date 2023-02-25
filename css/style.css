@@ -3,26 +3,24 @@
 
 *{
   box-sizing: border-box;
-  
 }
-.fondo{
-   
-  background-color: #eee4da; 
+body{
+    background-color: tomato;
 }
 .principal{
-    background-color:#fabc6b;
+    background-color:#c0654f;
     padding-right: 0px;
     padding-left: 0px;
 }
 .formulario{
-    background-color: #f8d7b2;
+    background-color: #f0a196;
 }
 .info{
     background-color: #fce5c4;
     padding-top: 3%;
 }
 #inf,#exp,#hab{
-    background-color: #e9b424;
+    background-color: tomato;
 }
 .portada {
     font-family: 'Anton';
@@ -47,6 +45,16 @@ li,a{
 .indice{
     background-color: bisque;
 }
-.infoAcademica{
-    font-size: 150%;
+.datos{
+    padding: 20px 10vh;
+}
+.experiencias p {
+    text-align: justify;
+}
+.experiencias h6 {
+    font-weight: bold;
+}
+.titulo {
+    font-weight:bolder;
+    font-size: 5rem;
 }
