@@ -58,3 +58,6 @@ li,a{
     font-weight:bolder;
     font-size: 5rem;
 }
+#ayuda{
+    display: none;
+}
